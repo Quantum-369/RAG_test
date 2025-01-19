@@ -1,0 +1,25 @@
+# Flask for web server
+flask
+
+# OpenAI for embeddings and chat
+openai
+
+# Supabase for database
+supabase
+
+# Environment variables
+python-dotenv
+
+# Web scraping and parsing
+playwright
+beautifulsoup4
+aiohttp
+
+# Async support
+asyncio
+
+
+
+# Basic Python utilities
+numpy
+crawl4ai
