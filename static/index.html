@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project_Vectron</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1><i class="fas fa-robot"></i>Vectron</h1>
+                <button class="upload-toggle" onclick="toggleUpload()">
+                    <i class="fas fa-chevron-down"></i> Process New Content
+                </button>
+            </div>
+            
+            <div class="upload-section" id="uploadSection">
+                <div class="upload-content">
+                    <input type="text" id="urlInput" placeholder="Enter URL or sitemap.xml link">
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" id="isSitemap">
+                            <span>Is Sitemap</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="persistEmbeddings">
+                            <span>Persist Embeddings</span>
+                        </label>
+                    </div>
+                    <button onclick="processUrl()" class="process-btn">
+                        <i class="fas fa-cog"></i> Process URL
+                    </button>
+                    <div id="status"></div>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here -->
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
